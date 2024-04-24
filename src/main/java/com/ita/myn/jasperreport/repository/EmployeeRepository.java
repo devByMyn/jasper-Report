@@ -1,4 +1,7 @@
 package com.ita.myn.jasperreport.repository;
 
-public interface EmployeeRepository {
+import com.ita.myn.jasperreport.entity.Employee;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface EmployeeRepository extends JpaRepository<Employee, Long> {
 }
